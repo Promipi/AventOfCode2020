@@ -18,16 +18,13 @@ int main()
 		Numbers[index] = number; //guardamos el numero
 		index++;
 	}
-	Search(Numbers,index);
+	Search(Numbers,index); //para buscar cual conjunto de tres numeros suma 2020
 	
 
 	
 	
 	return 0;
 }
-
-
-
 
 int Search(int Numbers[],int index )
 {
@@ -37,10 +34,10 @@ int Search(int Numbers[],int index )
 		{
 			for(int o=0;o<index;o++)
 			{
-				if(Numbers[i]  + Numbers[j]  +  Numbers[o] == 2020)
+				if(Numbers[i]  + Numbers[j]  +  Numbers[o] == 2020) //si encontramos los mltiplicamos
 				{				
 					int multiplicacion = Numbers[i] *  Numbers[j] *  Numbers[o];
-					cout<<Numbers[i]<<"  *  "<<Numbers[j]<<" *  "<<Numbers[o]<<" = "<<multiplicacion;
+					cout<<Numbers[i]<<"  *  "<<Numbers[j]<<" *  "<<Numbers[o]<<" = "<<multiplicacion; //mostramos la multiplicaion
 					return multiplicacion;
 					
 				}
